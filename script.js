@@ -48,7 +48,7 @@ const fetchAlbums = (id) => {
   fetch(url)
     .then((res) => res.json())
     .then((data) => showAlbum(data.album));
-    
+
   const artistContainer = elementById("artists");
   artistContainer.innerHTML = "";
 };
@@ -76,3 +76,4 @@ const showAlbum = (data) => {
     albumContainer.appendChild(div);
   });
 };
+handleSearch()
